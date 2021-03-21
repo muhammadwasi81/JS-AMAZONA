@@ -1,0 +1,22 @@
+{
+  "name": "js-amazona",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammadwasi81/JS-AMAZONA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhammadwasi81/JS-AMAZONA/issues"
+  },
+  "homepage": "https://github.com/muhammadwasi81/JS-AMAZONA#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
