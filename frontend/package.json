@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server src --verbose",
+    "startdev": "webpack serve --mode development --env development --hot --port 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "webpack": "^5.27.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
