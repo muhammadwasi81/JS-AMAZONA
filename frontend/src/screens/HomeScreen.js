@@ -2,20 +2,21 @@ import Rating from "../components/Rating";
 
 const HomeScreen = {
   render: async () => {
-      const response = await fetch('http://localhost:5000/api/products', {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      if(!response || !response.ok) {
-        return `<div>Error in getting data</div>`;
-      }
-      const products  = await response.json();
+    const response = await fetch("http://localhost:5000/api/products", {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    if (!response || !response.ok) {
+      return `<div>Error in getting data</div>`;
+    }
+    const products = await response.json();
 
     return `
          <ul class="products">
-         ${products.map(
-           (product) => `
+         ${products
+           .map(
+             (product) => `
             <li>
             <div class="product">
             <a href="/#/product/${product._id}">
@@ -28,7 +29,7 @@ const HomeScreen = {
             </div>
              <div class="product-rating">
                ${Rating.render({
-                 value: product.rating, 
+                 value: product.rating,
                  text: `${product.numReviews} reviews`,
                })}
              </div>
@@ -41,10 +42,10 @@ const HomeScreen = {
           </div>
             </li>
          `
-         ).join('\n')}   
+           )
+           .join("\n")}   
          `;
   },
 };
 
-
-export default HomeScreen
+export default HomeScreen;
