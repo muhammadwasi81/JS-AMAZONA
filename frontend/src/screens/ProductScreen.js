@@ -36,7 +36,7 @@ const ProductScreen = {
               })};
               </li>
                 <li>
-                price: <strong>${product.price}</strong>
+                price: <strong>$${product.price}</strong>
                 </li>
                 <li>
                 Description:
