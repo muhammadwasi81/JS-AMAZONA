@@ -1,12 +1,15 @@
 import Rating from "../components/Rating";
+import { hideLoading, showLoading } from "../utils";
 
 const HomeScreen = {
   render: async () => {
+    showLoading();
     const response = await fetch("http://localhost:5000/api/products", {
       headers: {
         "Content-Type": "application/json",
       },
     });
+    hideLoading();
     if (!response || !response.ok) {
       return `<div>Error in getting data</div>`;
     }
