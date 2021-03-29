@@ -44,7 +44,6 @@ userRouter.post(
     }
   })
 );
-
 userRouter.post(
   "/register",
   expressAsyncHandler(async (req, res) => {

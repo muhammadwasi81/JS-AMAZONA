@@ -3,8 +3,10 @@ import HomeScreen from "./screens/HomeScreen.js";
 import ProductScreen from "./screens/ProductScreen.js";
 import { hideLoading, parseRequestUrl, showLoading } from "./utils.js";
 import CartScreen from "./screens/CartScreen";
-import SigninScreen from "./screens/signinScreen.js";
+import SigninScreen from "./screens/RegisterScreen.js";
 import Header from "./components/Header.js";
+import RegisterScreen from "./screens/RegisterScreen.js";
+import ProfileScreen from "./screens/ProfileScreen.js";
 
 const routes = {
   "/": HomeScreen,
@@ -12,6 +14,8 @@ const routes = {
   "/cart/:id": CartScreen,
   "/cart": CartScreen,
   "/signin": SigninScreen,
+  "/register": RegisterScreen,
+  "/profile": ProfileScreen,
 };
 
 const router = async () => {
