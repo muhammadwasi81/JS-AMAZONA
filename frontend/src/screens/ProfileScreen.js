@@ -99,9 +99,9 @@ const ProfileScreen = {
           </tbody>
         </table>
       </div>
-    </div>
+     </div>
     
-    `;
+     `;
   },
 };
 export default ProfileScreen;

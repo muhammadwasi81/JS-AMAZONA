@@ -32,7 +32,7 @@ const router = async () => {
   await Header.after_render();
   const main = document.getElementById("main-container");
   main.innerHTML = await screen.render();
-  await screen.after_render();
+  if(screen.after_render) await screen.after_render();
   hideLoading();
 };
 
