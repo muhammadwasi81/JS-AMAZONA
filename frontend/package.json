@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "chartist": "^0.11.4"
   },
   "devDependencies": {
     "webpack": "^5.27.1",
